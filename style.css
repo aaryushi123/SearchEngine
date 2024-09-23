@@ -1,0 +1,108 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #674ee1, #feb47b);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.container {
+    max-width: 600px;
+    width: 90%; /* Allow it to cover more space on smaller screens */
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Space between input and buttons */
+}
+
+input[type="text"] {
+    width: 100%; /* Full width for input */
+    padding: 15px;
+    border: 2px solid #f04a4a;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #feb47b;
+    box-shadow: 0 0 5px rgba(254, 180, 123, 0.5);
+    outline: none;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    margin-top: 10px; /* Space between input and buttons */
+}
+
+button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #b749bb;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    background-color: #8e1c8e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#clear-history-button {
+    margin-left: 15px; 
+}
+
+#search-history {
+    margin-top: 30px;
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#history-list {
+    list-style-type: none;
+    padding: 0;
+    width: 40%;
+   margin-left: 162px;
+    
+}
+
+#history-list li {
+    background-color: #c3c8cc;
+    margin: 5px 0;
+    padding: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 50%;
+    
+}
+
+#history-list li:hover {
+    background-color: black;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
